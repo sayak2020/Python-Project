@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Take a Test</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+
+  
+  
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+<body>
+<script>
+	 function cok(){
+		var ck = document.cookie;
+		var email=ck.split('=')[1]
+		 
+	   document.getElementById("email").value = email;
+	   
+	   }	
+	</script>
+	
+<!--==========================
+      Services Section
+    ============================-->
+	<form action="testpackage.py" method="post" name="login" onsubmit="cok()">
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">TEST PACKAGES</h3>
+          <p class="section-description">CHECK VARIOUS TEST PACKAGES BELOW AND CLICK ON THE TEST YOU LIKE TO HAVE</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-7 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-plus-square"></i></a></div>
+              <h4 class="title"><a href="">COVID-19</a></h4>
+              <p class="description">COVID-19 Test is available NOW !</p>
+			  <p style="color:green" class="price">Rs. 500</p>
+			  <p><input type="radio" value="COVID-19" name='package'/> » Select</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-dot-circle-o"></i></a></div>
+              <h4 class="title"><a href="">Lipid Profile</a></h4>
+              <p class="description">Complete And Partial Packages</p>
+			  <p style="color:green" class="price">Rs. 200</p>
+			  <p><input type="radio" value="LIPID PROFILE" name='package'/> » Select</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-heart"></i></a></div>
+              <h4 class="title"><a href="">Haemoglobin</a></h4>
+              <p class="description">Level of Haemoglobin</p>
+			  <p style="color:green" class="price">Rs. 150</p>
+			  <p><input type="radio" value="HEAMOGLOBIN" name='package'/> » Select</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-tint"></i></a></div>
+              <h4 class="title"><a href="">Blood Sugar</a></h4>
+              <p class="description">Fasting & PP</p>
+			  <p style="color:green" class="price">Rs. 100</p>
+			  <p><input type="radio" value="BLOOD SUGAR" name='package'/> » Select</p>
+			  
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-flask"></i></a></div>
+              <h4 class="title"><a href="">Thyroid Test</a></h4>
+              <p class="description">TSH/T4/T3</p>
+			  <p style="color:green" class="price">Rs. 300</p>
+			  <p><input type="radio" value="THYROID" name='package'/> » Select</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-medkit"></i></a></div>
+              <h4 class="title"><a href="">Liver Function</a></h4>
+              <p class="description">Detect Liver State</p>
+			  <p style="color:green" class="price">Rs. 200</p>
+			  <p><input type="radio" value="LIVER FUNCTION" name='package'/> » Select</p>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+	  <div class="text-center" > <input type="submit" value="submit" />
+	  </div>
+	  </div>
+    </section><!-- #services -->
+	<input type="hidden" name="email" id="email"/>
+	</form>
+	 <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  
+  
+  </body>
+
+</html>

@@ -1,0 +1,8 @@
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+SELECT register.name FROM test INNER join register ON test.email=register.email
+SELECT * FROM appointment INNER join register ON appointment.email=register.email
+SELECT appointment.name,register.phone,register.email FROM appointment INNER join register ON appointment.email=register.email
+UPDATE `test` SET `status` = 'd', `report` = 'Negative' WHERE `test`.`sl` = 12
+SELECT register.name,register.phone,test.email,test.test FROM test INNER join register ON test.email=register.email where test.report='p'

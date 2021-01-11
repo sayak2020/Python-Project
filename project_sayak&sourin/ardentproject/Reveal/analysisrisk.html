@@ -1,0 +1,119 @@
+<html>
+<title> Analyse risk</title>
+<head>
+
+<style>
+form { 
+margin: 0 auto; 
+width:1150px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+</style>
+
+  <meta charset="utf-8">
+  <title>BloodFair</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+<script>
+function validation(){
+
+var age=document.forms['register']['age'];
+var patient=document.forms['register']['p'];
+var z=document.forms['register']['z'];
+
+if(age.value==""){
+	window.alert("Age can't be empty..");
+	window.location.href="/ardentproject/Reveal/register.html";
+}
+if(patient.value==""){
+	window.alert("no patient ststus provided..");
+		window.location.href="/ardentproject/Reveal/register.html";
+}
+if(z.value==""){
+	window.alert("mention zone You are in....");
+		window.location.href="/ardentproject/Reveal/register.html";
+}
+
+
+}
+</script>
+<body>
+<section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Analyse your risk factor</h2>
+          <p>Fill up the details </p>
+        </div>
+	</div>
+</section>
+<form action="analysisrisk.py" method ="post" name="register" onsubmit='return validation()'>
+    <div class="form-group col-md-2">
+    <h5>Enter Age:</h5><input type="tel" name="age" class="form-control" id="age" placeholder="Enter your age" min="1" max="3" required />
+    <div class="validation"></div>
+    </div>
+	<div class="form-group col-md-4">
+	<h5>Which Zone You are living in ?</h5><input type="radio" name="z" value="red"/> RED   
+								 <br><input type="radio" name="z" value="orange"/> ORANGE  
+							 <br>	<input type="radio" name="z" value="green"/> GREEN  
+	</div>	
+	<div class="form-group col-md-4">
+	<h5>Do you have any of the symptoms mentioned below ?</h5>
+	1. Cold<span><br/>
+	2. Fever<br/>
+	3. Chest pain<br/>
+	4. Breathlesness<br/>
+	5. Indigestion<br>
+	<br><input type="radio" name="s" value="few"/> Few  
+	<input type="radio" name="s" value="all"/> All 
+	<input type="radio" name="s" value="none"/> None 
+	<input type="radio" name="s" value="most"/> Most 
+	</div>
+	<div class="form-group col-md-6">
+	<h5>Is there COVID-19 patients around Your Locality ?</h5>
+	<input type="radio" name="p" value="yes"/> Yes 
+	<input type="radio" name="p" value="no"/> No
+	</div>
+	<div><button type="submit" >Check!</button></div>
+<form>
+</body>
+</html>
